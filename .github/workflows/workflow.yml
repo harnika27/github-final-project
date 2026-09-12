@@ -19,11 +19,23 @@ jobs:
         with:
           scandir: '.'
 
-      - name: Run shell scripts
-        run: |
-          find . -name "*.sh" -type f | while read script; do
-            if [ -x "$script" ]; then
-              echo "Running $script..."
-              bash "$script"
-            fi
-          done
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: '.'
