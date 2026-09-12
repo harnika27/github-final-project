@@ -1,14 +1,34 @@
 # Simple Interest Calculator
 
-This project is a Bash script to calculate simple interest.
+This project is a Simple Interest Calculator implemented using a Bash script.
+
+## Project Description
+
+The Simple Interest Calculator calculates simple interest based on the principal amount, rate of interest, and time period.
 
 ## Formula
+
 Simple Interest = (Principal × Rate × Time) / 100
 
-## Inputs
-- Principal
-- Rate of Interest
-- Time Period
+## Technologies Used
 
-## Output
-- Simple Interest value
+- Bash
+- Git
+- GitHub
+- GitHub Actions
+- Tekton
+- OpenShift
+
+## CI/CD
+
+This project uses GitHub Actions for Continuous Integration and Tekton/OpenShift Pipelines for Continuous Deployment.
+
+The CI pipeline performs:
+
+- Linting
+- Unit testing
+- Build and validation
+
+## Author
+
+Harnika
