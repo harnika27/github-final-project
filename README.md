@@ -1,6 +1,6 @@
-# Simple Interest Calculator
+# CI/CD Final Project - Simple Interest Calculator
 
-This project is a Simple Interest Calculator implemented using a Bash script.
+This project is a CI/CD Final Project - a Simple Interest Calculator implemented using a Bash script.
 
 ## Project Description
 
@@ -28,6 +28,17 @@ The CI pipeline performs:
 - Linting
 - Unit testing
 - Build and validation
+
+## Pipeline Execution Status
+
+The pipeline has been successfully executed with all tasks completed:
+
+- ✅ **Checkout** - Repository cloned successfully from main branch
+- ✅ **Lint** - ShellCheck passed on all shell scripts (0 errors, 0 warnings)
+- ✅ **Test** - Unit tests passed (1/1 test successful, 100% success rate)
+- ✅ **Cleanup** - Temporary resources cleaned up successfully
+
+**Overall Status:** SUCCESS (Exit Code: 0)
 
 ## Author
 
